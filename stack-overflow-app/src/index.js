@@ -228,7 +228,7 @@ function App(){
     </div>
   );
 }
-const titleText = "Welcome to my Application";
+const titleText = "Budget Stack Overflow";
 ReactDOM.render(
   <App />,
   document.getElementById('root')
