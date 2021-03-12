@@ -1,23 +1,70 @@
 body {
   margin: auto;
-  width: 50%;
-  background-color: powderblue;
+  width: min-content;
+ background-color:darkslateblue;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-y: auto;
+  color: rgb(214, 214, 235);
+  display: flex;
+  
+}
+.comment{
+  /* background-color: #8470ff; */
+  border: 2px solid #8470ff;
+  padding: 5px;
 }
 h1 {
-  color: rgb(90, 90, 110);
+  color: rgb(214, 214, 235);
 }
- 
+.input_label{
+  color: rgb(214, 214, 235);
+}
+.answer{
+  /* background-color: #666666; */
+  border: 2px solid #00008b;
+  padding: 5px;
+
+
+}
+  a{
+    color: #8470ff;
+  }
+.post{
+  border: 2px solid #666666;
+  padding: 5px;
+  margin-bottom: 5px;
+  justify-self: center;
+  align-items: center;
+  width:50%;
+}
+input{
+  background-color:#666666;
+  color: rgb(214, 214, 235);
+  border: 2px #00008b;
+  border-style: solid;
+  border-radius: 4px;
+  outline: none;
+  margin: 1%;
+  padding-inline-start: 4px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  flex-wrap: wrap;
 }
 button{
   margin-top: 10px;
+  color: rgb(214, 214, 235);
+  background-color:#666666;
+  border: 2px #00008b;
+  border-style: solid;
+  border-radius: 4px;
+  outline: none;
 }
