@@ -26,7 +26,9 @@ class InputBox extends React.Component{
   }
 
   handleSubmit(event){
-    this.makeRequest(createQueryAddress('votes', this.state.input));
+    if(this.state.input !== ''){
+      this.makeRequest(createQueryAddress('votes', this.state.input));
+    }
     event.preventDefault();
   }
 
@@ -48,8 +50,10 @@ class InputBox extends React.Component{
         for(var i = 0; i < 10; i++ ){
           result[result.length] = data.items[i];
       }
-      result.sort(function(a, b){return b.creation_date - a.creation_date;})
-      this.setState({requestData: result})
+      if(result[0] !== undefined){
+        result.sort(function(a, b){return b.creation_date - a.creation_date;})
+        this.setState({requestData: result})
+     }
       result = [];
      });
 
